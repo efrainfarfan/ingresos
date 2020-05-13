@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Open+sans);
+
+
+/* para resetear valores en la pagina*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* para cuando se aplique un borde se aplique 
+    al contenedor y no se salga o expanda*/
+   }
+
+/*fin del reseteo */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+}
+header {
+    width: 100%;
+    height: 50px;
+    background: #333; /*color fondo*/
+    color: #fff;/*color texto*/
+    position: fixed; /* para que el menu se quede en la cabecera y no desaparesca cuando se baja*/
+    top: 0;
+    left: 0; /* top y left en cero es para que empieze arriba en la esquina*/
+    z-index: 100; /* es para que el menu tape al resto de los elementos que esten */
+}
+ .contenedor {
+     width: 98%;
+     margin: auto;
+     /* para que el contenedor tenga un espacio y no este pegado a la izquierda
+     ademas de que mantenga como un margen */
+ }
+h1 {
+ float: left; /* para que el h1 y el icono del menu floten*/
+}
+
+header .contenedor{
+    display: table; /*para que el texto flotante del h1 y menu no se salgan del contenedor*/
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+#bienvenidos{
+    text-align: center;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.copy{
+    font-size: 20px;
+
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.sociales a{
+    color: #333;
+    text-decoration: none;
+    
+}
+
+.sociales a:hover{
+    color: blue;
+}
+
