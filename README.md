@@ -1,2 +1,0 @@
-# ingresos
-pagina de prueba
