@@ -1,0 +1,47 @@
+
+#pasefotos{
+    padding: 55px;
+
+}
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden; /*para que los elementos que esten fuera no se muestren por lo que
+                        las img que estan al costado no se mostraran*/ 
+}
+
+.slider ul{
+    display: flex;/*paraquelasimagenesestenacontinuaciondelaotra*/
+    padding: 0;
+    width: 400%;/*parahacerunulmuylargodondeestenlasimagenes*/
+    animation: cambio 20s infinite alternate; /*se llama cambio dura 20seg se repite infinito y alterna -cuando llega al final vuelve*/
+    -webkit-animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in-out;
+
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{ /* aqui se define las paradas */
+
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}  /* 20% de 20 =4seg dura */
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+}
+
+

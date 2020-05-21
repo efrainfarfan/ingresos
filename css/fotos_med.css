@@ -1,0 +1,73 @@
+body{
+  background: #1fa87a;
+}
+
+
+ .contenedor{
+    position: relative;
+    top: 150px;
+    margin: auto;
+    width: 420px;
+    height: 340px;
+    background-image: url(../img_medicos/m1.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+    color: red;
+    &: hover{
+        h1,p{
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+            -moz-transform: translateX(0%);
+            -ms-transform: translateX(0%);
+            -o-transform: translateX(0%);
+            transition:all 06s;
+            -webkit-transition:all 06s;
+            -moz-transition:all 06s;
+            -ms-transition:all 06s;
+            -o-transition:all 06s;
+            }
+            &:before , &:after{
+                width: 80%;
+            }
+
+           }
+    &:before{
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      content: "";
+      widows: 0;
+      height: 2px;
+      background: #fff;
+    }
+    &:after{
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      content: "";
+      width:0;
+      height: 2px;
+      background: #fff;
+      }
+    h1{
+        position: absolute;
+        left: 20px;
+        top:70px;
+        transform: translateX(-110%);
+        -webkit-transform: translateX(-110%);
+        -moz-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+        -o-transform: translateX(-110%);
+    }
+    p{
+        position: absolute;
+        left: 20px;
+        top:130px;
+        transform: translateX(110%);
+        -webkit-transform: translateX(110%);
+        -moz-transform: translateX(110%);
+        -ms-transform: translateX(110%);
+        -o-transform: translateX(110%);
+}
+   
+}
