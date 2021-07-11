@@ -6,7 +6,7 @@
    /* background:-webkit-linear-gradient(rgb(0, 192, 26, 0.596), rgb(38, 83, 68));*/
     display: flex; /*para que las imagenes esten en una linea*/
     justify-content: center;
-    flex-wrap: wrap; /*para que los elementos que no caven bajen a la siguiente linea*/
+  /*  flex-wrap: wrap; /*para que los elementos que no caven bajen a la siguiente linea*/
 }
 
 #blog article{
@@ -18,8 +18,8 @@
 #blog .imagen{
     position: relative;/*aumentado*/
    
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 70%;
    
 }
 
