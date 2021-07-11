@@ -1,0 +1,94 @@
+@import url(http://fonts.googleapis.com/css?family=Open+sans);
+
+
+#blog_info .contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+        
+}
+#blog_info .contenedor figure{
+    position: relative;
+    height: 150px;
+    width: 250px;
+    overflow: hidden;
+    margin: 15px ; /*separacion entre figuras se podria agregar auto para que ocupe todo*/
+   
+    /*ocultarobjetosqueestanfueradelcontenedor*/
+    border-radius:6px ;
+    -webkit-border-radius:6px ;
+    -moz-border-radius:6px ;
+    -ms-border-radius:6px ;
+    -o-border-radius:6px ;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+#blog_info .contenedor figure img{
+
+ width:100% ;
+ height: 100%;
+ transition: all 500ms ease-out;
+ -webkit-transition: all 500ms ease-out;
+ -moz-transition: all 500ms ease-out;
+ -ms-transition: all 500ms ease-out;
+ -o-transition: all 500ms ease-out;
+}
+
+#blog_info .contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,103,123,0.7);
+    opacity: 0;/*para ocultar*/
+    visibility: hidden;
+    text-align: center;
+    transition: all 500ms ease-out;
+ -webkit-transition: all 500ms ease-out;
+ -moz-transition: all 500ms ease-out;
+ -ms-transition: all 500ms ease-out;
+ -o-transition: all 500ms ease-out;
+}
+
+#blog_info .contenedor figure:hover > .capa{
+opacity: 1;
+visibility: visible;
+}
+
+#blog_info .contenedor figure:hover > .capa h3{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#blog_info .contenedor figure:hover .capa h3{
+color: #fff;
+font-weight: 400px;
+margin-bottom: 40px; /*define hasta donde va a bajar*/
+margin-top: 20px; /*define hasta donde arriba se queda*/
+transition: all 700ms ease-out;
+ -webkit-transition: all 700ms ease-out;
+ -moz-transition: all 700ms ease-out;
+ -ms-transition: all 700ms ease-out;
+ -o-transition: all 700ms ease-out;
+}
+
+#blog_info .contenedor figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+#blog_info .contenedor figure:hover > img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
