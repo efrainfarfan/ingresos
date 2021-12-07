@@ -7,9 +7,7 @@
     flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
-    height: 100vh;
-   
-        
+    height: 70vh;
 }
 #blog_info .contenedor figure{
     position: relative;
@@ -91,4 +89,60 @@ transition: all 700ms ease-out;
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
+}
+
+
+
+
+
+
+#blog_videos .vid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+#blog_videos .vid video{
+    position: relative;
+    height: 150px;
+    width: 250px;
+   
+    margin: auto ; /*separacion entre figuras se podria agregar auto para que ocupe todo*/
+   
+}
+
+
+ 
+
+@media screen and (max-width: 650px){
+    #blog_videos .vid video{
+      width: 360px;
+      
+    }
+    #blog_videos .vid{
+           
+        height: 50vh;
+    }
+    #blog_info .contenedor{
+        height: 100vh;
+    }
+}
+
+
+
+  @media screen and (min-width: 651px){
+    #blog_videos .vid video{
+      width: 650px;
+      height: 400px;
+    }
+    #blog_videos .vid{
+        height: 60vh;
+    }
+    #blog_info .contenedor{
+        height: 30vh;
+    }
+
 }

@@ -80,3 +80,13 @@
 .info a:hover{
     background: #62e030;
 }
+
+.venci img {
+    display: inline-block;
+    position: relative;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
